@@ -12,4 +12,10 @@ export class RegisterModalComponent implements OnInit {
   @Input() show = false;
   @Input() customClass = '';
   @Input() closeCallback = () => false;
+  @Input() passwordShown = false;
+  @Input() showHideImg = this.passwordShown
+    ? '../../assets/icon--eye-closed.svg'
+    : '../../assets/icon--eye-open.svg';
+  @Input() passwordShowLabel = this.passwordShown ? 'hide' : 'show';
+  @Input() passwordField = this.passwordShown ? 'text' : 'password';
 }

@@ -29,7 +29,7 @@
         <input type="checkbox" id="remember" name="remember" />
         <label for="remember">Remember</label>
       </div>
-      <button class="sign-in-button">Sign On</button>
+      <button class="sign-in-button" type="button">Sign On</button>
     </form>
     <div class="sign-in-links">
       <span (click)="toggleModal()">Register</span>
@@ -45,6 +45,10 @@
     [show]="showModal"
     [customClass]="'custom_modal_class'"
     [closeCallback]="toggleModal"
+    [passwordShown]="passwordShown"
+    [showHideImg]="showHideImg"
+    [passwordShowLabel]="passwordShowLabel"
+    [passwordField]="passwordField"
   >
   </app-register-modal>
 </div>

@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in-page.component.scss']
 })
 export class SignInPageComponent implements OnInit {
-  showRegisterModal = false;
   passwordShown = true;
+  showModal = false;
 
   passwordField = this.passwordShown ? 'text' : 'password';
   showHideImg = this.passwordShown
@@ -19,8 +19,6 @@ export class SignInPageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  showModal = false;
 
   toggleModal = () => {
     this.showModal = !this.showModal;
