@@ -18,17 +18,58 @@
   justify-content: space-between;
 }
 
-.sign-in-form {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  align-self: center;
-}
-
 .sign-in-logo {
   margin: 20px 0 0 20px;
 }
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 192px;
+  max-width: 272px;
+  align-self: center;
+}
+
+.sign-in-input-div {
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 1px 3px 0px rgb(0 0 0 / 12%);
+  border-radius: 3px;
+  background-color: HSL(300, 20%, 99%);
+  overflow: hidden;
+  padding: 1rem 0.5rem 0.15rem 0.5rem;
+}
+.sign-in-input {
+  border: none;
+  outline: 0;
+  width: 100%;
+}
+
+.sign-in-input:focus {
+  border-bottom: 1.2px solid;
+}
+
+.sign-in-label {
+  position: absolute;
+  top: 0;
+  font-size: 0.7rem;
+}
+
+.sign-in-remember-div {
+  margin-bottom: 0.8rem;
+}
+
+.sign-in-button {
+  background-color: HSL(230, 53%, 35%);
+  border: none;
+  color: rgb(255 255 255);
+  width: max-content;
+  padding: 0.5rem 1.3rem;
+  border-radius: 3px;
+}
+
 .sign-in-links {
   align-self: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }

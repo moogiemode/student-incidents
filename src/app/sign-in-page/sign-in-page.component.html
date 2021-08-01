@@ -4,21 +4,30 @@
       <img class="sign-in-logo" src="../../assets/logo--Gaggle.svg" alt="Gaggle Logo" />
     </div>
     <form class="sign-in-form">
-      <div>
+      <div class="sign-in-input-div">
         <label class="sign-in-label" for="username">Username</label>
-        <input type="text" name="username" id="username" />
+        <input class="sign-in-input" type="text" name="username" id="username" />
       </div>
-      <div>
+      <div class="sign-in-input-div">
         <label class="sign-in-label" for="password">Password</label>
-        <input type="password" name="password" id="password" />
+        <div class="show-hide-password">
+          <label class="show-hide-label">show hide</label>
+        </div>
+        <input
+          class="sign-in-input"
+          [type]="passwordField"
+          name="password"
+          id="password"
+        />
       </div>
-      <div>
+
+      <div class="sign-in-remember-div">
         <input type="checkbox" id="remember" name="remember" />
         <label for="remember">Remember</label>
       </div>
-      <button>Sign On</button>
+      <button class="sign-in-button">Sign On</button>
     </form>
-    <div class="sign-in-links">register forgot password?</div>
+    <div class="sign-in-links"><a href="">register forgot password?</a></div>
   </section>
   <section class="sign-in-page-right"></section>
 </main>

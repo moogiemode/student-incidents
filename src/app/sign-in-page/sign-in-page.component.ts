@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in-page.component.scss']
 })
 export class SignInPageComponent implements OnInit {
+  passwordShown = false;
 
-  constructor() { }
+  passwordField = this.passwordShown ? 'text' : 'password';
+  showHideImg = this.passwordShown
+    ? '../../assets/icon--eye-open.svg'
+    : '../../assets/icon--eye-closed.svg';
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }
