@@ -1,0 +1,18 @@
+<div
+  [ngClass]="customClass || ''"
+  class="modal"
+  [ngStyle]="{ display: show ? 'block' : 'none' }"
+>
+  <div class="overlay" (click)="closeCallback()"></div>
+  <form class="modal_content">
+    <!-- <button title="Close" class="close_modal" (click)="closeCallback()">
+      <i class="fas fa-times"></i>
+    </button> -->
+    <div class="chicken">🐣</div>
+    <div class="modal-input-area"></div>
+    <div class="modal-register-cancel-links">
+      <button class="register-buttons">Cancel</button>
+      <button class="register-buttons">Register Account</button>
+    </div>
+  </form>
+</div>
