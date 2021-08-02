@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in-page',
@@ -16,10 +17,13 @@ export class SignInPageComponent implements OnInit {
 
   passwordShowLabel = this.passwordShown ? 'hide' : 'show';
 
-  constructor() {}
-
-  ngOnInit(): void {}
-
+  constructor(private route: ActivatedRoute) {}
+  name: any;
+  ngOnInit(): void {
+    this.route.queryParams.subscribe((params) => {
+      this.name = params['name'];
+    });
+  }
   toggleModal = () => {
     this.showModal = !this.showModal;
     return this.showModal;
