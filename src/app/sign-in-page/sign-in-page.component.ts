@@ -18,10 +18,10 @@ export class SignInPageComponent implements OnInit {
   passwordShowLabel = this.passwordShown ? 'hide' : 'show';
 
   constructor(private route: ActivatedRoute) {}
-  name: any;
+  // name: any;
   ngOnInit(): void {
     this.route.queryParams.subscribe((params) => {
-      this.name = params['name'];
+      // this.name = params['name'];
     });
   }
   toggleModal = () => {

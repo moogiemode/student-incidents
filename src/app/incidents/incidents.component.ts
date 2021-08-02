@@ -8,10 +8,10 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class IncidentsComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
-  name: any;
+  // name: any;
   ngOnInit(): void {
     this.route.queryParams.subscribe((params) => {
-      this.name = params['name'];
+      // this.name = params['name'];
     });
   }
 }

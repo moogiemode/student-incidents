@@ -1,0 +1,18 @@
+.incidents-section {
+  display: grid;
+  grid-template-rows: 57px 48px 40px minmax(100px, 1fr);
+  height: 100vh;
+  background-color: RGB(235 235 235);
+}
+
+.header-logo-background {
+  display: flex;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+}
+div {
+  border: 1px solid brown;
+}

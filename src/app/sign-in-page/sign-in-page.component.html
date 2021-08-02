@@ -1,8 +1,8 @@
 <main class="sign-in-page">
   <section class="sign-in-page-left">
-    <div>
+    <header>
       <img class="sign-in-logo" src="../../assets/logo--Gaggle.svg" alt="Gaggle Logo" />
-    </div>
+    </header>
     <form class="sign-in-form">
       <div class="sign-in-input-div">
         <label class="sign-in-label" for="username">Username</label>
@@ -34,9 +34,9 @@
       >
     </form>
     <div class="sign-in-links">
-      <span (click)="toggleModal()">Register</span>
+      <a (click)="toggleModal()">Register</a>
       <div class="link-divider"></div>
-      <span>Forgot password?</span>
+      <a>Forgot password?</a>
     </div>
   </section>
   <section class="sign-in-page-right"></section>
