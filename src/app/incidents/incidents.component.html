@@ -4,9 +4,56 @@
       <img src="../../assets/left-icon-gaggle.svg" alt="" />
       <img src="../../assets/logo--Gaggle.svg" alt="Gaggle Logo" />
     </div>
-    <div></div>
+    <div class="request-status">
+      <span>Register</span>
+      <div class="divider"></div>
+      <span>Forgot password?</span>
+    </div>
   </header>
-  <div>icons</div>
-  <div>table header</div>
+  <div class="buttons-and-search">
+    <div class="button-container-incident">
+      <div class="incident-button-div">
+        <button class="incident-button">
+          <fa-icon [icon]="faSearch"></fa-icon
+          ><fa-icon [icon]="faChevronRight" class="fa-xs"></fa-icon>
+        </button>
+        <span>button 1</span>
+      </div>
+      <div class="incident-button-div">
+        <button class="incident-button">
+          <fa-icon [icon]="faCloudUploadAlt"></fa-icon
+          ><fa-icon [icon]="faChevronRight" class="fa-xs"></fa-icon>
+        </button>
+        <span>button 2</span>
+      </div>
+      <div class="incident-button-div">
+        <button class="incident-button">
+          <fa-icon [icon]="faList"></fa-icon
+          ><fa-icon [icon]="faChevronRight" class="fa-xs"></fa-icon>
+        </button>
+        <span>button 3</span>
+      </div>
+    </div>
+    <div class="search-export-container">
+      <div class="search-div">
+        <fa-icon class="incident-search-icon" [icon]="faFilter"></fa-icon>
+        <input class="incident-search-input" type="text" placeholder="Find ..." />
+        <span>Filter by Keyword</span>
+      </div>
+      <div class="incident-button-div">
+        <button class="incident-button">
+          <fa-icon [icon]="faFileDownload"></fa-icon
+          ><fa-icon [icon]="faChevronDown" class="fa-xs"></fa-icon>
+        </button>
+        <span>Export</span>
+      </div>
+    </div>
+  </div>
+  <div class="table-header-div">
+    <input type="checkbox" />
+    <h5>Date</h5>
+    <h5>Incident Type</h5>
+    <h5>Status</h5>
+  </div>
   <div>incidents</div>
 </div>

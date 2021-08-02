@@ -8,11 +8,97 @@
 .header-logo-background {
   display: flex;
   gap: 10px;
+  margin-left: 1rem;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
 }
-div {
-  border: 1px solid brown;
+
+.buttons-and-search {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: RGB(73 73 73);
+  border-bottom: 1px solid RGB(212, 211, 212);
+}
+
+.incident-button-div {
+  display: flex;
+  flex-direction: column;
+}
+.incident-button {
+  background-color: RGB(255 255 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 48px;
+  height: 24px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 1px 3px 0px rgb(0 0 0 / 12%);
+  border-radius: 3px;
+  border: none;
+}
+
+.button-container-incident {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search-export-container {
+  display: flex;
+  flex-direction: row;
+  padding-right: 1rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+.search-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.incident-search-icon {
+  position: absolute;
+  left: 87px;
+  top: 6px;
+}
+
+.incident-search-input {
+  padding-left: 6.5rem;
+  width: 238px;
+  height: 24px;
+  border: none;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.table-header-div {
+  height: 40px;
+  display: grid;
+  grid-template-columns: auto 179px 110px 1fr;
+  padding-left: 1rem;
+  grid-gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid RGB(212, 211, 212);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.divider {
+  width: 2px;
+  border: 1px solid RGB(196, 195, 196);
+  height: 12px;
+}
+
+.request-status {
+  display: flex;
+  gap: 0.7rem;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
 }
